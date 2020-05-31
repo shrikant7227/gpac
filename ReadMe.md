@@ -1,12 +1,12 @@
-`This is a spring boot Maven application based on H2 In memory data base. So runt it as a spring boot application.`
+**`This is a spring boot Maven application based on H2 In memory data base. So run it as a spring boot application.`**
 
-1. Define Schema in 'schema.sql' which will create or drop schema.
-2. Created two entities object Library and Book.
+1. Schema File is 'schema.sql' which will create or drop schema when ever application restart.
+2. Created two entities Library and Book.
 3. Assumption:
-    A Book could not be added without the library department entry but a library department can be added without any book.
-4. H2 in-memory database can be access after application start:
+    1st we need to create a virtual library using api #1 and after that we add book inside that library using api #2. Library have name as unique constraint and book has isbn as unique constraint.
+4. H2 in-memory database can be access using this link once application start: username and password is:  gpac
    
-   localhost:9092/h2-console/
+   _localhost:9092/h2-console/_
 
 5. Application running on port: 9092
    
